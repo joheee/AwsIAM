@@ -1,6 +1,6 @@
 module "admin_group" {
-  source = "./modules/iam_group"
-  name = "admin_group"
+    source = "./modules/iam_group"
+    name = "admin_group"
 }
 module "admin_group_policy" {
     source = "./modules/iam_group_policy_attachment"

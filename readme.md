@@ -2,4 +2,5 @@
 
 ### group structure
 - admin
-- 
+- devops
+- auditor

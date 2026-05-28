@@ -1,3 +1,7 @@
 variable "name" {
-  type = string
+    type = string
+}
+variable "path" {
+    type = string
+    default = "/"
 }

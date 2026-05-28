@@ -4,17 +4,7 @@ module "group_admin" {
 }
 
 module "group_admin_policy" {
-    source = "./modules/iam_group_policy"
-    name = "admin-terraform-policy"
+    source = "./modules/iam_group_policy_attachment"
     group_name = module.group_admin.name
-    policy = {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Effect": "Allow",
-                "Action": "*",
-                "Resource": "*"
-            }
-        ]
-    }
+    policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }

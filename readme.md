@@ -1,6 +1,6 @@
 # AWS IAM Terraform 
 
-### group structure
-- admin
+### group & user structure
+- admin 
 - devops
 - auditor

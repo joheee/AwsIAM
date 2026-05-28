@@ -4,7 +4,7 @@ Terraform project that sets up AWS IAM users and groups with role-based access.
 
 ## What this does
 
-Users are placed into groups. Each group has one AWS managed policy attached. Users inherit permissions from their group — not from policies assigned directly to them.
+Users are placed into groups. Each group has one AWS managed policy attached. Users inherit permissions from their group, not from policies assigned directly to them.
 
 There are three roles:
 

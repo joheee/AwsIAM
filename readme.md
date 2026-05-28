@@ -8,11 +8,9 @@ Users are placed into groups. Each group has one AWS managed policy attached. Us
 
 There are three roles:
 
-| Group           | User           | Policy              | Access                           |
-| --------------- | -------------- | ------------------- | -------------------------------- |
-| `admin_group`   | `admin_user`   | AdministratorAccess | Full account access              |
-| `devops_group`  | `devops_user`  | PowerUserAccess     | Manage resources, no IAM changes |
-| `auditor_group` | `auditor_user` | ReadOnlyAccess      | View only                        |
+- **Admin** — `admin_user` → `admin_group` → `AdministratorAccess` (full account access)
+- **DevOps** — `devops_user` → `devops_group` → `PowerUserAccess` (manage resources, no IAM changes)
+- **Auditor** — `auditor_user` → `auditor_group` → `ReadOnlyAccess` (view only)
 
 ## Design Architecture
 
